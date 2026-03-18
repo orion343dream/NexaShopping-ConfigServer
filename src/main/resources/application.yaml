@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ITS-2130-ECA-HDSE-69-70/Capstone-Project-Configurations.git
+          uri: https://github.com/orion343dream/NexaShopping-Project-Configurations.git
           search-paths: platform,services
         native:
           search-locations:
