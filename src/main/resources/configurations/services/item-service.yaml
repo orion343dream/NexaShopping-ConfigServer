@@ -1,0 +1,26 @@
+spring:
+  mvc:
+    problemdetails:
+      enabled: true
+
+  mongodb:
+    host: localhost
+    port: 27017
+    database: eca
+    username: root
+    password: mongodb
+    authentication-database: admin
+
+server:
+  port: 8001
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
